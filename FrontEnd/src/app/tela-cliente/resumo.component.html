@@ -1,0 +1,14 @@
+<div class="cadastro-container">
+  <h1>Planejar Rota de Frete</h1>
+  <p>Resumo da sua solicitação:</p>
+
+  <ul>
+    <li><strong>Coleta:</strong> {{ coleta }}</li>
+    <li><strong>Destino:</strong> {{ destino }}</li>
+    <li><strong>Tipo:</strong> {{ tipoTransporte }}</li>
+    <li *ngIf="itensGrandes"><strong>Itens Grandes:</strong> {{ itensGrandes }}</li>
+    <li><strong>Data:</strong> {{ dataTransporte }}</li>
+  </ul>
+
+  <button (click)="confirmarResumo()">Confirmar resumo</button>
+</div>

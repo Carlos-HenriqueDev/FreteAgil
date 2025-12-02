@@ -1,0 +1,44 @@
+.cadastro-container {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  background: rgba(30, 30, 30, 0.95);
+  text-align: center;
+}
+
+.cadastro-container h1 {
+  margin-bottom: 1rem;
+}
+
+.cadastro-container p {
+  margin-bottom: 2.5rem;
+  font-size: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-top: 1.5rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 2px solid #2a2a2a;
+  background-color: #1e1e1e;
+  color: white;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 2.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  width: 100%;
+}

@@ -1,0 +1,30 @@
+<div class="cadastro-container">
+  <h1>Planejar Rota de Frete</h1>
+  <p>Digite os pontos de coleta e destino dos seus itens</p>
+
+  <form (ngSubmit)="confirmarRota()">
+    <!-- Ponto de coleta -->
+    <label for="coleta">Endereço de coleta:</label>
+    <input 
+      id="coleta" 
+      [(ngModel)]="coleta" 
+      name="coleta" 
+      type="text" 
+      placeholder="Ex: Rua Carlos Henrique, N 19" 
+      required
+    />
+
+    <!-- Ponto de destino -->
+    <label for="destino">Endereço de destino:</label>
+    <input 
+      id="destino" 
+      [(ngModel)]="destino" 
+      name="destino" 
+      type="text" 
+      placeholder="Ex: Rua Jaime Silva, N 15" 
+      required
+    />
+
+    <button type="submit">Confirmar rota</button>
+  </form>
+</div>

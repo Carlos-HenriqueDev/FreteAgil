@@ -1,0 +1,20 @@
+<div class="cadastro-container">
+  <h1>Digite suas credenciais</h1>
+
+  <form (ngSubmit)="entrar()">
+    <label for="perfil">Você é:</label>
+    <select id="perfil" [(ngModel)]="perfil" name="perfil" required>
+      <option value="">Selecione...</option>
+      <option value="motorista">Motorista</option>
+      <option value="usuario">Cliente</option>
+    </select>
+
+    <label for="email">Email</label>
+    <input id="email" [(ngModel)]="email" name="email" type="email" required>
+
+    <label for="senha">Senha</label>
+    <input id="senha" [(ngModel)]="senha" name="senha" type="password" required>
+
+    <button type="submit">Entrar</button>
+  </form>
+</div>

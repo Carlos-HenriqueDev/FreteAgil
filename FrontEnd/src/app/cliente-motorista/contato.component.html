@@ -1,0 +1,17 @@
+<div class="chat-container">
+  <h1>Converse com Jorge</h1>
+
+  <div class="mensagens">
+    <div 
+      *ngFor="let msg of mensagens" 
+      [ngClass]="msg.enviado ? 'mensagem-enviada' : 'mensagem-recebida'"
+    >
+      {{ msg.texto }}
+    </div>
+  </div>
+
+  <div class="input-area">
+    <input [(ngModel)]="novaMensagem" placeholder="Mensagem" />
+    <button (click)="enviarMensagem()">Enviar</button>
+  </div>
+</div>

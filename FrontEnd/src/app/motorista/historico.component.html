@@ -1,0 +1,10 @@
+<div class="container">
+  <h2>Bem vinda, {{ nomeMotorista }}!</h2>
+  <h3>Seu histórico de solicitações</h3>
+
+  <div class="solicitacao" *ngFor="let item of historico">
+    <p><strong>De:</strong> {{ item.origem }} / <strong>Para:</strong> {{ item.destino }}</p>
+    <p><strong>Tipo:</strong> {{ item.tipo }}</p>
+    <a href="#">clique para visualizar detalhes</a>
+  </div>
+</div>

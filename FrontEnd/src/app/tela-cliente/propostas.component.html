@@ -1,0 +1,12 @@
+<div class="cadastro-container">
+  <h1>Planejar Rota de Frete</h1>
+  <p>Encontramos esses motoristas que fazem esse tipo de transporte:</p>
+
+  <div *ngFor="let motorista of motoristas" class="proposta-card">
+    <h2>{{ motorista.nome }}</h2>
+    <p>⭐ Nota: {{ motorista.nota }}</p>
+    <p>🚚 Veículo: {{ motorista.veiculo }}</p>
+    <p>📦 Carga máxima: {{ motorista.cargaMaxima }}</p>
+    <button (click)="entrarEmContato(motorista)">Entrar em contato</button>
+  </div>
+</div>

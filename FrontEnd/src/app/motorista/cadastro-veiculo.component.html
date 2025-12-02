@@ -1,0 +1,25 @@
+<div class="cadastro-container">
+    <h1>Olá, {{ nome }}</h1>
+    <p>Agora, precisamos cadastrar seu veículo</p>
+
+    <form (ngSubmit)="confirmarTipoVeiculo()">
+        
+        <label>Qual é o seu tipo de veículo?</label>
+        <div class="opcoes">
+            <label><input type="radio" name="tipo" [(ngModel)]="tipoSelecionado" value="simples-simples" required> Eixo simples com rodagem simples</label>
+            <label><input type="radio" name="tipo" [(ngModel)]="tipoSelecionado" value="simples-dupla"> Eixo simples com rodagem dupla</label>
+            <label><input type="radio" name="tipo" [(ngModel)]="tipoSelecionado" value="duplo-tandem"> Eixo duplo tandem</label>
+            <label><input type="radio" name="tipo" [(ngModel)]="tipoSelecionado" value="duplo-nao-tandem"> Eixo duplo não em tandem</label>
+            <label><input type="radio" name="tipo" [(ngModel)]="tipoSelecionado" value="triplo"> Eixo triplo</label>
+
+        </div>
+
+        <label>Modelo do veículo</label>
+        <input type="text" [(ngModel)]="modelo" name="modelo" required>
+
+        <label>Placa do veículo</label>
+        <input type="text" [(ngModel)]="placa" name="placa" required>
+
+        <button type="submit">Confirmar detalhes</button>
+    </form>
+</div>

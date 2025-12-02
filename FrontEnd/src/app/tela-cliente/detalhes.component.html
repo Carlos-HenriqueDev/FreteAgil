@@ -1,0 +1,61 @@
+<div class="cadastro-container">
+  <h1>Planejar Rota de Frete</h1>
+  <p>Dê mais detalhes do que será transportado</p>
+
+  <form (ngSubmit)="confirmarDetalhes()">
+    <!-- Endereço de coleta -->
+    <label for="coleta">Endereço de coleta:</label>
+    <input 
+      id="coleta" 
+      [(ngModel)]="coleta" 
+      name="coleta" 
+      type="text"
+      placeholder="Ex: Rua ABC, 123 - Bairro"
+      required
+    />
+
+    <!-- Endereço de destino -->
+    <label for="destino">Endereço de destino:</label>
+    <input 
+      id="destino" 
+      [(ngModel)]="destino" 
+      name="destino" 
+      type="text"
+      placeholder="Ex: Rua XYZ, 456 - Bairro"
+      required
+    />
+
+    <!-- Tipo de transporte -->
+    <label for="tipo">Qual é o tipo de transporte?</label>
+    <input 
+      id="tipo" 
+      [(ngModel)]="tipoTransporte" 
+      name="tipoTransporte"
+      type="text"
+      placeholder="Ex: Mudança de casa, transporte de móveis..."
+      required
+    />
+
+    <!-- Itens grandes -->
+    <label for="itens">Você irá transportar itens grandes? Se sim, quais?</label>
+    <input 
+      id="itens"
+      [(ngModel)]="itensGrandes"
+      name="itensGrandes"
+      type="text"
+      placeholder="Ex: Geladeira, fogão, cama..." 
+    />
+
+    <!-- Data -->
+    <label for="data">Data do transporte:</label>
+    <input 
+      id="data"
+      [(ngModel)]="dataTransporte"
+      name="dataTransporte"
+      type="date"
+      required
+    />
+
+    <button type="submit">Confirmar detalhes</button>
+  </form>
+</div>

@@ -1,0 +1,33 @@
+.cadastro-container {
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  background: rgba(30, 30, 30, 0.95);
+}
+
+.cadastro-container h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.cadastro-container p {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+form label {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+form input {
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+form button {
+  margin-top: 2rem;
+  width: 100%;
+}
