@@ -1,0 +1,12 @@
+POST http://localhost:8080/api/motoristas
+Content-Type: application/json
+
+{
+  "nome": "Carlos Teste",
+  "email": "motorista@teste.com",
+  "senha": "123456",
+  "telefone": "99999999",
+  "placaVeiculo": "ABC1234",
+  "modeloVeiculo": "Caminhão Azul",
+  "tipoCaminhao": "Truck"
+}

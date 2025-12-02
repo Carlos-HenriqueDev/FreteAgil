@@ -1,0 +1,9 @@
+POST http://localhost:8080/api/fretes
+Content-Type: application/json
+
+{
+  "origem": "Centro",
+  "destino": "Cidade Nova",
+  "preco": 100,
+  "status": "SOLICITADO"
+}

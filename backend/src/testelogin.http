@@ -1,0 +1,11 @@
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "motorista@teste.com",
+  "senha": "123456",
+  "perfil": "motorista"
+}
+### BUSCAR MOTORISTA LOGADO (rota /me)
+GET http://localhost:8080/api/motoristas/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb3RvcmlzdGFAdGVzdGUuY29tIiwicm9sZSI6Ik1PVE9SSVNUQSIsImlhdCI6MTc2MzkxNTUyNSwiZXhwIjoxNzYzOTMzNTI1fQ.2suIct14hXb3CfV9B4WQamoE5hfl4X5BJcxeiswIWKs
